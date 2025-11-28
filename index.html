@@ -1,0 +1,49 @@
+"index.html"
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Anggota Pagar Nusa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Absensi Anggota Pagar Nusa</h1>
+    </header>
+
+    <main>
+
+        <section class="section">
+            <h2>Form Absensi</h2>
+            <p>Silakan isi absensi latihan hari ini.</p>
+
+            <form id="absensiForm">
+                <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                <select id="tingkatan" required>
+                    <option value="">Pilih Tingkatan</option>
+                    <option value="Dasar">Dasar</option>
+                    <option value="Menengah">Menengah</option>
+                    <option value="Lanjutan">Lanjutan</option>
+                </select>
+
+                <button type="submit">Kirim Absensi</button>
+            </form>
+
+            <div class="output">
+                <h3>Daftar Hadir Anggota</h3>
+                <ul id="daftarHadir"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Absensi Pagar Nusa • Dibuat untuk GitHub Pages</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
